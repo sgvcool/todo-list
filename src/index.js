@@ -1,17 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const TodoList = () => {
-    return (
-        <ul>
-            <li>Learn React</li>
-            <li>Build awesome App</li>
-        </ul>
-    );
-};
+
 
 const SearchPanel = () => {
-    return (<input placeholder="search" />);
+    const searchText = 'Type here to search';
+    const serchStyle = {
+        fontSize: '20px'
+    };
+
+    return (<input 
+        placeholder={searchText} 
+        className = "foo"
+        style={serchStyle}
+        />);
 };
 
 const AppHeader = () => {
