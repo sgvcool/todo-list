@@ -1,24 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-
-
-const SearchPanel = () => {
-    const searchText = 'Type here to search';
-    const serchStyle = {
-        fontSize: '20px'
-    };
-
-    return (<input 
-        placeholder={searchText} 
-        className = "foo"
-        style={serchStyle}
-        />);
-};
-
-const AppHeader = () => {
-    return (<h1>My todo List</h1>);
-};
+import AppHeader from './components/app-header';
+import SearchPanel from './components/search-panel';
+import TodoList from './components/todo-list';
 
 const App = () => {
     return (
