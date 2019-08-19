@@ -1,7 +1,11 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './todo-list-item.css';
 
-export default class TodoListItem extends React.Component{
+export default class TodoListItem extends Component{
+
+  onLabelClick = () =>{
+    console.log(`Done ${this.props.label}`);
+  }
 
   render(){
 
@@ -16,6 +20,7 @@ export default class TodoListItem extends React.Component{
       <span className="todo-list-item">
         <span
           className="todo-list-item-label"
+          onClick={this.onLabelClick}
           style={style}>
           {label}
         </span>
